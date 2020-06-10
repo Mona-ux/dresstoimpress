@@ -1,0 +1,333 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+	body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+.navbar-brand{
+}
+.hy{
+	text-align:center;
+	}
+.i{
+	margin-left:20px;
+	float:left;
+	}
+	.i2{ 
+		float:right;
+		margin-right: 20px;}
+</style>
+</head>
+<body>
+	
+<header class="header">
+	
+  <a class="navbar-brand" href="#">
+   <img src="Images/logo.png" height="120" width="120">
+    
+  </a>
+
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="kurti.html>Kurtis</a></li>
+    <li><a href="sarees.html">Sarees</a></li>
+    <li><a href="#suits.html">Suits</a></li>
+  </ul>
+</header>
+<br><br><br><br>
+<div class="row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees </h5>
+        <p class="card-text">Price: 2200</p> </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees </h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Rayon Kurti with Sarara</h5>
+        <p class="card-text">Price: 2200 </p>
+      </div>
+    </div>
+  </div>
+  <div class="row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k9.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees </h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k10.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k11.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k12.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k13.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Images/k14.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Latest Cotton Sarees</h5>
+        <p class="card-text">Price: 2200</p>
+      </div>
+    </div>
+  </div>
+  
+      
+  
+</div>
+<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+ <footer> 
+
+ <h1 class="hy">Contact Us</h1>
+ 
+ <br> <br> 
+ <div class="i"><a href="https://wa.me/+91-9768036467">	<img src="Images/images.png" height="150" width="150"></a>
+	</div>
+		<div class="i2"><a href="tel:+91-9768036467"><img src="Images/call.png" height="150" width="150"></a>
+		
+</footer>
+</body>
+</html>
